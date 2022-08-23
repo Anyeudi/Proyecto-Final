@@ -1,0 +1,125 @@
+{
+  "id": "0b87dd1e-f57e-4961-8452-30f3cc8b9947",
+  "version": "2.0",
+  "name": "Proyecto Final",
+  "url": "https://www.cajeroautomatico.com",
+  "tests": [{
+    "id": "d854b835-61ea-45db-9061-728d05033b59",
+    "name": "Pueba Inicial",
+    "commands": [{
+      "id": "83e52cd0-bff9-454e-bb3b-7ae05b976d89",
+      "comment": "Abrir el sistema",
+      "command": "open",
+      "target": "https://www.saucedemo.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e617fbcc-620d-486c-8b53-fd3df9fd12f1",
+      "comment": "Vista de la pagina principal",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89253b5b-c287-4114-9a57-ebff19d731e6",
+      "comment": "Click en el boton de ingresar user",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5386df38-81fd-4820-8ee6-816e04217b13",
+      "comment": "Ingresar Usuario",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "d104236b-b68c-40c2-a9ca-325030fed044",
+      "comment": "Click en el boton de ingresar contraseña",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac939071-85ef-4557-9f45-39e5df7502fc",
+      "comment": "Ingresar Contraseña",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "6ed888d6-934f-4449-9b13-e76707109226",
+      "comment": "Click en el boton de ingresar",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86995196-8aca-4e60-ab21-441b44a86055",
+      "comment": "Ingresado",
+      "command": "mouseOver",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "80e3f591-a5ca-42fe-bd02-2bd06c39083f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d854b835-61ea-45db-9061-728d05033b59"]
+  }],
+  "urls": ["https://www.saucedemo.com/", "https://www.cajeroautomatico.com/"],
+  "plugins": []
+}
